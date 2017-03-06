@@ -1,0 +1,17 @@
+<ion-view view-title="Inicio" >
+ <ion-header-bar class="bar-positive">
+    <h1 class="title">Group By Month & Year</h1>
+    <div class="buttons">
+        <button class="button button-icon ion-android-search" 
+                ng-click="vm.showFilterBar()"></button>
+    </div>      
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="ec in lista" href="#/app/entregas/{{ec.id}}">
+        <h2>{{ec.tipo}}</h2>
+        <p>{{ec.NomePessoa}}, {{ec.Endereco}}, {{ec.Bairro}}, {{ec.Cidade}}-{{ec.Estado}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

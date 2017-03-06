@@ -1,0 +1,9 @@
+{
+  "name": "appentregas",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.2"
+  },
+  "dependencies": {
+    "signature_pad": "^1.5.3"
+  }
+}

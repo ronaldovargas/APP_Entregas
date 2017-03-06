@@ -1,0 +1,14 @@
+<ion-view view-title="Assinatura">
+    <ion-content ng-controller="CameraController" padding="true">
+        <button class="button  icon-right ion-android-camera button-positive" ng-click="tirarFoto()">
+Tirar Foto
+</button>
+        <!--<button class="button  icon-right  button-positive" ng-click="trocarFoto()">
+Escolher Foto
+</button>-->
+        <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+</ion-content>
+
+</ion-content>
+
+</ion-view>

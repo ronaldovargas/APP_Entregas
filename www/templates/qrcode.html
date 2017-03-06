@@ -1,0 +1,11 @@
+<ion-view view-title="Assinatura">
+    <ion-content ng-controller="QRcodeController" padding="true">
+        <button class="button  icon-right ion-android-camera button-positive" ng-click="scanBarcode()">
+Scan
+</button>
+            <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+</ion-content>
+
+</ion-content>
+
+</ion-view>

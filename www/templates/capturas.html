@@ -1,0 +1,72 @@
+<ion-view view-title="{{lista.NomePessoa}}">
+  <ion-content>
+
+<div style="width: 400px;">
+<div class="row">
+  <div class="col col-70">
+    <div class="" style="border:none;width: 250px;float:left"> Nome:
+      <label style="background-color: #fff">
+      <input type="text" placeholder="" ng-model="data.inputNomeReceptor" style="border:solid 1px ;width:95%">
+      </label>
+    </div>
+    <div class="col-col-25" style="float: left">
+  <nav>
+    <ul>
+        <li>
+          <a href="" class="icon ion-ios-person-outline" style="width: 32px;height: 30px;font-size: 20px; background-color: #000;color:#fff"></a>
+        <ul>
+          <li><a ng-click="changeNames('{{lista.NomePessoa}} (Destinatário)  ')">{{lista.NomePessoa}} (Destinatário)  </a></li>
+          <li><a ng-click="changeNames('Membro da familia')">Membro da familia</a></li>
+          <li><a ng-click="changeNames('Vizinho')">Vizinho</a></li>
+          <li><a ng-click="changeNames('Recepcionista')">Recepcionista</a></li>
+          <li><a ng-click="changeNames('Ajudante')">Ajudante</a></li>
+          <li><a ng-click="changeNames('Colega')"Colega </a></li>
+          <li><a ng-click="changeNames('Segurança')">Segurança</a></li>
+          <li><a ng-click="changeNames('Outros')">Outros </a></li>
+        </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+  <b>{{nomereceptor}}</b>&nbsp;&nbsp;&nbsp;  {{quemrecebeu}}
+</div>
+<br><br>
+
+<div class="row" style="padding-left:20px;">
+   <a class="button  icon-right ion-checkmark button-balanced" ng-if="possuiAssinatura == 1"  style="width:200px" ng-click="AdicionaAssinatura()">Assinatura</a>
+    <a class="button  icon-right ion-edit button-positive" ng-if="possuiAssinatura == 0" style="width:200px" ng-click="AdicionaAssinatura()"> + Assinatura</a>
+</div>
+<br>
+<div class="row" style="padding-left:20px;">
+   <a class="button  icon-right ion-checkmark button-balanced" ng-if="possuiQrCode == 1" style="width:200px">QR Code</a>
+    <a class="button  icon-right ion-ios-barcode-outline button-positive" ng-if="possuiQrCode == 0" style="width:200px">+ QR Code  </a>
+</div>
+<br>
+<center>
+<div class="row" style="padding-left:20px;">
+   <a class="button  icon-right ion-checkmark button-balanced" ng-if="possuiFoto == 1" style="width:200px" ng-click="AdicionaFoto()">Foto</a>
+    <a class="button  icon-right ion-android-camera button-positive" ng-if="possuiFoto == 0" style="width:200px" ng-click="AdicionaFoto()">+ Foto  </a>
+</div>
+<br>
+<div class="row">
+ <div class="list">
+
+  <div class="item item-button-right">
+    Bens recebidos em boa qualidade
+    <button class="button button-balanced">
+      <i class="icon ion-checkmark"></i>
+    </button>
+  </div>
+
+
+
+</div>
+  
+</center>
+</ion-content>
+</ion-view>

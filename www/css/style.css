@@ -1,0 +1,143 @@
+.card {
+    box-shadow: none !important;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/truck-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #4CB050;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/check-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: #D5554A;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/close-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: #E9AA4D;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/arrow-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color:#2095F2;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/phone-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: #673BB7;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/map-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    margin:5px;
+    background-image: url(/img/truck-icon.png); 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+  nav {
+	margin: 20px 0;
+	background-color: transparent;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #000;
+	}
+
+nav a {
+	display:block;
+	padding:5px 10px;	
+	color:#000;
+	font-size:15px;
+	line-height: 20px;
+	text-decoration:none;
+  background-color: #fff;
+}
+
+nav a:hover { 
+	background-color: #000; 
+ 	color:#fff;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 25px;
+    height: 40px; 
+    background-color: #fff; 
+ 	color:#000;
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:50px; 
+	
+}
+
+	
+
+li > a:only-child:after { content: ''; }

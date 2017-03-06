@@ -1,0 +1,21 @@
+<ion-view view-title="Assinatura">
+    <ion-pane>
+ 
+      <ion-content class='has-header padding' scroll='false'>
+          <canvas id='assinaturaCanvas' width='300' height='180' style='border: 1px solid black;'></canvas>
+          <div class='button-bar' style="width: 300px">
+              <a class='button button-energized' ng-click='limpar()' >Limpar</a>
+              <a class='button button-balanced' ng-click='salvar()' >Salvar</a>
+          </div>
+          <br>
+          <img ng-src='{{assinatura}}'/>
+      </ion-content>
+    </ion-pane>
+  <ion-footer-bar align-title="left" class="bar-positive">
+  <div class="buttons">
+    <button class="button icon-left ion-ios-undo button-positive" ng-click="voltar()">Voltar</button>
+  </div>
+ 
+ 
+</ion-footer-bar>
+</ion-view>

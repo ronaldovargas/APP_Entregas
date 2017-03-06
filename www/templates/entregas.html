@@ -1,0 +1,28 @@
+<ion-view view-title="{{lista.NomePessoa}}">
+  <ion-content>
+    <div class="card">
+      <h2>{{lista.tipo}}</h2>
+      <p>{{lista.NomePessoa}}, {{lista.Endereco}}, {{lista.Bairro}}, {{lista.Cidade}}-{{lista.Estado}}</p>
+      <button class="button button" style="background-color:#13A286;color:#fff;" ng-click="mostraListaItens()"> {{tituloBotao}} </button>
+<ion-list ng-show="mostraItens == 1">
+  <ion-item ng-repeat="item in lista.itens">
+    <h2>{{item.nomeproduto}} - {{item.valor}}</h2>
+  </ion-item>
+</ion-list>
+<h4>Instruções de Entrega:</h4>
+<p>Ponto de referência: {{lista.pontoreferencia}}</p>
+<p>Responsável pela entrega : {{lista.responsavel}}</p>
+</div>
+<div class="row">
+  <button class="button box1" ng-click="showCapturas()"></button>
+  <button class="button box2" ng-click="InformarEntrega()"></button>
+  <button class="button box3" ng-click="InformarNaoEntrega()"></button>
+</div>
+<div class="row">
+  <button class="button box4" ng-click="voltar()"></button>
+  <a href="tel:41997816440" class="button box5"></a>
+  <button class="button box6" ng-click="MostrarRota()"></button>
+</div>
+
+</ion-content>
+</ion-view>
