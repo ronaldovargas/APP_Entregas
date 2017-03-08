@@ -3,80 +3,80 @@
 }
 
 .box1{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #000;
     color: #fff;
     margin:5px;
     background-image: url(/img/truck-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .box2{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #4CB050;
     color: #fff;
     margin:5px;
     background-image: url(/img/check-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .box3{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #D5554A;
     color: #fff;
     margin:5px;
     background-image: url(/img/close-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .box4{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #E9AA4D;
     color: #fff;
     margin:5px;
     background-image: url(/img/arrow-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .box5{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color:#2095F2;
     color: #fff;
     margin:5px;
     background-image: url(/img/phone-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .box6{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #673BB7;
     color: #fff;
     margin:5px;
     background-image: url(/img/map-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .box1{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #000;
     color: #fff;
     margin:5px;
     background-image: url(/img/truck-icon.png); 
-    background-size: 50px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -134,7 +134,7 @@ nav ul ul li {
 
 nav ul ul ul li {
 	position: relative;
-	top:50px; 
+	top:60px; 
 	
 }
 

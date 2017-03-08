@@ -4,9 +4,9 @@
 <div style="width: 400px;">
 <div class="row">
   <div class="col col-70">
-    <div class="" style="border:none;width: 250px;float:left"> Nome:
+    <div class="" style="border:none;width: 150px;float:left"> Nome:
       <label style="background-color: #fff">
-      <input type="text" placeholder="" ng-model="data.inputNomeReceptor" style="border:solid 1px ;width:95%">
+      <input type="text" placeholder="" ng-model="data.inputNomeReceptor" style="border:solid 1px ;width:85%">
       </label>
     </div>
     <div class="col-col-25" style="float: left">
@@ -43,8 +43,8 @@
 </div>
 <br>
 <div class="row" style="padding-left:20px;">
-   <a class="button  icon-right ion-checkmark button-balanced" ng-if="possuiQrCode == 1" style="width:200px">QR Code</a>
-    <a class="button  icon-right ion-ios-barcode-outline button-positive" ng-if="possuiQrCode == 0" style="width:200px">+ QR Code  </a>
+   <a class="button  icon-right ion-checkmark button-balanced" ng-if="possuiQrCode == 1" style="width:200px" ng-click="AdicionarQrCode()">QR Code</a>
+    <a class="button  icon-right ion-ios-barcode-outline button-positive" ng-if="possuiQrCode == 0" style="width:200px" ng-click="AdicionarQrCode()">+ QR Code  </a>
 </div>
 <br>
 <center>

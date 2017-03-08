@@ -43,13 +43,13 @@ angular.module('starter.controllers', [])
     $scope.tirarFoto = function () {
       var options = {
         quality: 75,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: Camera.PictureSourceType.CAMERA,
+        /*  destinationType: Camera.DestinationType.DATA_URL,*/
+        /* sourceType: Camera.PictureSourceType.CAMERA,*/
         allowEdit: true,
-        encodingType: Camera.EncodingType.JPEG,
+        /*   encodingType: Camera.EncodingType.JPEG,*/
         targetWidth: 300,
         targetHeight: 300,
-        popoverOptions: CameraPopoverOptions,
+        /*    popoverOptions: CameraPopoverOptions,*/
         saveToPhotoAlbum: false
       };
 
@@ -57,7 +57,7 @@ angular.module('starter.controllers', [])
         $scope.imgURI = "data:image/jpeg;base64," + imageData;
 
         var foto = [{ idEntrega: id, foto: $scope.imgURI }];
-        FotoService.create(foto);
+        FotoServices.create(foto);
 
       }, function (err) {
       });
@@ -214,14 +214,14 @@ angular.module('starter.controllers', [])
 
 
       }, function (error) {
-        //console.log("error");
+        console.log("error");
       });
     };
 
   })
 
   .controller('MapaController', function ($scope, $stateParams, $state, $cordovaGeolocation, EntregasServices) {
-//  $state.reload($state.current.name);
+    //  $state.reload($state.current.name);
 
     var id = $stateParams.id;
     $scope.lista = EntregasServices.get(id);
@@ -249,7 +249,7 @@ angular.module('starter.controllers', [])
     directionsDisplay.setMap(map);
 
 
-    if (navigator.geolocation) { 
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
 
         pontoPadrao = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); // Com a latitude e longitude que retornam do Geolocation, criamos um LatLng
@@ -298,7 +298,7 @@ angular.module('starter.controllers', [])
     });
 
     $scope.$on("$ionicView.afterEnter", function (event, data) {
-     
+
       // handle event
       console.log("State Params: ", data.stateParams);
 
@@ -340,9 +340,13 @@ angular.module('starter.controllers', [])
       $state.go('app.camera', { id: id });
     }
 
+    $scope.AdicionarQrCode = function () {
+      $state.go('app.qrcode', { id: id });
+    }
 
     if (AssinaturaService.count(id) == 1) {
       $scope.possuiAssinatura = 1;
+      console.log('assinatura' + 1);
     }
 
     if (QRcodeServices.count(id) == 1) {
